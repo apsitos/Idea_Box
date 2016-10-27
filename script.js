@@ -97,7 +97,7 @@ function displayIdea(titleInput, bodyInput, id, quality){
     </li>`
   );
 }
-
+ 
 function saveToStorage() {
   localStorage.setItem('newUserIdea', JSON.stringify(ideaArray));
 }
