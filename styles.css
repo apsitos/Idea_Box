@@ -25,8 +25,8 @@ h1 {
 input, textarea, .save-button {
   font-size: 15pt;
   margin: 7px;
-  width: 40%;
   outline: none;
+  width: 40%;
 }
 
 input, textarea {
@@ -38,9 +38,9 @@ input:focus, textarea:focus {
 }
 
 textarea {
-  resize: none;
   height: 23px;
   overflow: auto;
+  resize: none;
 }
 
 .search-field{
@@ -50,9 +50,9 @@ textarea {
 }
 
 ul {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .new-idea {
@@ -67,8 +67,8 @@ ul {
   display: inline-block;
   font-size: 18pt;
   height: inherit;
+  line-height: inherit;
   max-width: 85%;
-  overflow: hidden;
   outline: none;
 }
 
@@ -106,9 +106,9 @@ button:focus {
   background-repeat: no-repeat;
   border: none;
   border-radius: 50%;
+  float: right;
   height: 20px;
   width: 20px;
-  float: right;
 }
 
 .delete:hover {

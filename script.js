@@ -17,7 +17,7 @@ $('.save-button').on('click', function(){
   ideaArray.push(newUserIdea);
   saveToStorage(newUserIdea);
   clearInputFields();
-});
+})
 
 $('ul').on('click', '.delete', function(){
   var id = this.closest('li').id
@@ -65,12 +65,12 @@ $('ul').on('click', '.down-vote', function() {
   saveToStorage();
 })
 
-search.on('keyup', function(){
+search.on('keyup', function(id, title){
   var search = $(this).val();
   $('h2:contains(' + search + ')').closest('.new-idea').show();
   $('h2:not(:contains(' + search + '))').closest('.new-idea').hide();
   $('h3:contains(' + search + ')').closest('.new-idea').show();
-});
+})
 //blog.grapii.com/2010/08/how-to-build-a-simple-search-filter-with-jquery/
 
 title.on('keyup', function(){
@@ -169,3 +169,18 @@ function downVote(quality) {
     return 'swill'
   }
 }
+
+//
+// $('.title-field').keypress(function(event){
+//   if(event.keyCode === 13){
+//     event.preventDefault();
+//     $('.save-button').click();
+//   }
+// });
+//
+// $('.body-field').keypress(function(event){
+//   if(event.keyCode === 13){
+//     event.preventDefault();
+//     $('.save-button').click();
+//   }
+// });
